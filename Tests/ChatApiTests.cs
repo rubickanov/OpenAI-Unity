@@ -2,9 +2,6 @@ using NUnit.Framework;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-using UnityEngine.TestTools;
 
 namespace OpenAI.Tests
 {
@@ -83,7 +80,8 @@ namespace OpenAI.Tests
             var res = await openai.CreateChatCompletion(req);
 
 
-            Assert.AreEqual(res.Choices[0].Message.ToolCalls[0].Function.Name, "GetNumber", "Tool function name is not equal");
+            Assert.AreEqual(res.Choices[0].Message.ToolCalls[0].Function.Name, "GetNumber",
+                "Tool function name is not equal");
         }
     }
 }

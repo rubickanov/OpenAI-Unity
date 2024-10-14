@@ -2,14 +2,15 @@ using System;
 using System.IO;
 using UnityEngine;
 using System.Text;
-using Newtonsoft.Json;
 using System.Threading;
 using System.Globalization;
 using System.Threading.Tasks;
 using UnityEngine.Networking;
 using System.Collections.Generic;
-using Newtonsoft.Json.Serialization;
 using System.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Action = System.Action;
 
 namespace OpenAI
 {
@@ -337,14 +338,6 @@ namespace OpenAI
             form.AddValue(request.Language, "language");
 
             return await DispatchRequest<CreateAudioResponse>(path, form);
-        }
-
-        public async Task<CreateRealtimeResponse> CreateRealtimeResponse(CreateRealtimeRequest request)
-        {
-            var path = $"{BASE_PATH}/realtime";
-            
-            var form = new List<IMultipartFormSection>();
-            if(string)
         }
 
         /// <summary>
