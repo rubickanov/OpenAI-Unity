@@ -1,8 +1,8 @@
 {
-  "name": "com.srcnalt.openai-unity",
-  "version": "0.2.2",
+  "name": "com.rubickanov.openai-unity",
+  "version": "1.0.0",
   "displayName": "OpenAI Unity",
-  "description": "An unofficial OpenAI Unity package that aims to help you use OpenAI API directly in Unity game engine.",
+  "description": "An unofficial OpenAI Unity package that aims to help you use OpenAI API directly in Unity game engine. \nEXTENDED: added functions calling.",
   "unity": "2020.3",
   "unityRelease": "0f1",
   "dependencies": {
@@ -16,8 +16,8 @@
     "whisper"
   ],
   "author": {
-    "name": "Sercan (Sarge) Altundas",
-    "url": "https://github.com/srcnalt"
+    "name": "rubickanov",
+    "url": "https://github.com/rubickanov"
   },
   "samples": [
     {
